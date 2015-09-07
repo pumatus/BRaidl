@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"   tools:context=".MainActivity" android:background="#d0d0d0">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=" "
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="52dp"
+        android:onClick="invokeService"
+        android:text="调用服务"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/personId"
+        android:layout_below="@+id/personId"
+        android:layout_marginTop="22dp"
+        android:onClick="getPersonName"
+        android:text="获取用户名称"
+        />
+    <EditText
+        android:id="@+id/personId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        />
+    <requestFocus />
+
+</RelativeLayout>
